@@ -35,7 +35,7 @@ tl.from(".img2",{
     y: "100%",
     duration: 0.3,
     opacity: 0,
-},"part2")
+},"part1")
 tl.from(".img3",{
     y: "100%",
     duration: 0.3,
