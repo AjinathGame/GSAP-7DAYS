@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+     width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+.container{
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background: rgb(18, 243, 130);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
