@@ -11,12 +11,13 @@ tl.from(".box",{
     duration: 0.4,
     y: -100,
     opacity: 0,
-    
+    rotation: 360,
+   
     stagger: {
-    grid: [10,22],
-    from: "random",
-    amount: 1.5
-  },
+      grid: [10, 22],
+      from: "random",
+      amount: 1.5
+    },
     ease: "back.out(1.7)",
   repeat: -1,
 })
