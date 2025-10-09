@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    overflow-x: hidden;
+}
+nav h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    font-size: 2.5rem;
+}
+nav button{
+    height: 50px;
+    width: 100px;
+    margin-right: 50px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+    }
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+     overflow-x: hidden;
+}
+.main-img-container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-img-container img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-inner-img-container{
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: whitesmoke;
+}
+.main-inner-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.container-2{
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(227, 226, 224);
+     overflow-x: hidden;
+}
+.text-container{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+   position: relative;
+   margin: 0 auto;
+   margin-left: 800px;
+    flex-direction: column;
+   
+}
+.text-container p{
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    position: relative;
+    
+    height: auto;
+    color: black;
+
+}
+.container-3{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(227, 226, 224);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     overflow-x: hidden;
+}
+.card{
+    height: 680px;
+    width: 470px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 15px;
+}
+.card-text{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+}
+.card-text p{
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-bottom: 10px;
+}
+.card-text span{
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.card-img{
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+.card-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-img img:nth-child(2){
+    clip-path: circle(0% at 50% 50%);
+    transition: all 0.5s ease-in-out;
+}
+.card:hover img:nth-child(2){
+    clip-path: circle(150% at 50% 50%);
+}
+.card:hover img{
+    height: 850px;
+    width: 470px;
+    object-fit: cover;
+    transition: .6s;
+}
